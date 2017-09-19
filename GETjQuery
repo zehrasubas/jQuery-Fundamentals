@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#MyButton').click(function () {
+                $.get('../HelpDetails.html', function (data) {
+                    $('#OutputDiv').html(data);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="MyButton">Get Proc</button>
+    <div id="OutputDiv"></div>
+</body>
+</html>
