@@ -1,0 +1,16 @@
+// .each(function(index,Element))
+
+
+$('.div').each(function(index, elem) { //elem=this
+    alert(index + '=' + $(elem).text);
+});
+
+//finding specific class name in the DOM object 
+
+var classList = document.getElementById('divId').className.split(/\s+/);
+for (var i = 0; i < classList.length; i++) {
+    if (classList[i] === 'someClass') {
+        //do something
+    }
+}
+
